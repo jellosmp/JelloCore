@@ -6,3 +6,9 @@ prefix: Jello Core
 authors: [ Eldon ]
 description: Core functionality for Jello SMP.
 website: https://eldon.zone/
+commands:
+  reloadconfig:
+    usage: /reloadconfig
+    permission: jellocore.admin.reloadconfig
+    description: Reloads the config internally
+    permission-message: "Only server admins may perform this command!"

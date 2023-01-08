@@ -4,6 +4,7 @@ import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
+import smp.jello.jellocore.commands.ReloadConfig;
 import smp.jello.jellocore.events.ServerListPing;
 
 public final class JelloCore extends JavaPlugin {
@@ -20,6 +21,8 @@ public final class JelloCore extends JavaPlugin {
         saveConfig();
 
         Bukkit.getPluginManager().registerEvents(new ServerListPing(), this);
+
+        getCommand("reloadconfig").setExecutor(new ReloadConfig());
     }
 
     @Override
