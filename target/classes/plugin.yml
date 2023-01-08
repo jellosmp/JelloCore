@@ -1,0 +1,8 @@
+name: Core
+version: '1.0-SNAPSHOT'
+main: smp.jello.core.Core
+api-version: 1.19
+prefix: JCore
+authors: [ Eldon ]
+description: Core functionality for Jello SMP.
+website: https://eldon.zone/
