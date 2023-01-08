@@ -12,3 +12,6 @@ commands:
     permission: jellocore.admin.reloadconfig
     description: Reloads the config internally
     permission-message: "Only server admins may perform this command!"
+  welcomebook:
+    usage: /welcomebook
+    description: Opens the welcome book
