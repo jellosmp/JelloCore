@@ -5,6 +5,8 @@ import org.bukkit.ChatColor;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
 import smp.jello.jellocore.commands.ReloadConfig;
+import smp.jello.jellocore.commands.WelcomeBook;
+import smp.jello.jellocore.events.PlayerJoin;
 import smp.jello.jellocore.events.ServerListPing;
 
 public final class JelloCore extends JavaPlugin {
@@ -21,8 +23,10 @@ public final class JelloCore extends JavaPlugin {
         saveConfig();
 
         Bukkit.getPluginManager().registerEvents(new ServerListPing(), this);
+        Bukkit.getPluginManager().registerEvents(new PlayerJoin(), this);
 
         getCommand("reloadconfig").setExecutor(new ReloadConfig());
+        getCommand("welcomebook").setExecutor(new WelcomeBook());
     }
 
     @Override
