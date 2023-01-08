@@ -1,4 +1,4 @@
-package smp.jello.core.util;
+package smp.jello.jellocore.util;
 
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;

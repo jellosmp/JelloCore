@@ -1,8 +1,8 @@
-name: Core
+name: JelloCore
 version: '${project.version}'
-main: smp.jello.core.Core
+main: smp.jello.jellocore.JelloCore
 api-version: 1.19
-prefix: JCore
+prefix: Jello Core
 authors: [ Eldon ]
 description: Core functionality for Jello SMP.
 website: https://eldon.zone/
